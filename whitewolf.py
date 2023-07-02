@@ -4,7 +4,7 @@ import platform
 if platform.platform == "Windows":
    os.system("title WHİTE WOLF")
 import wikipedia
-print("""  
+print(colorama.Fore.GREEN+"""  
 ░██╗░░░░░░░██╗██╗░░██╗██╗████████╗███████╗
 ░██║░░██╗░░██║██║░░██║██║╚══██╔══╝██╔════╝
 ░╚██╗████╗██╔╝███████║██║░░░██║░░░█████╗░░
@@ -21,7 +21,7 @@ print("""
 wikipedia.set_lang("Tr")
 while True:
        try:
-           ser = input("Ara:")
+           ser = input(colorama.Fore.GREEN+"Ara:")
            ss = wikipedia.summary(ser)
            print(colorama.Fore.GREEN+ss)
        except:
